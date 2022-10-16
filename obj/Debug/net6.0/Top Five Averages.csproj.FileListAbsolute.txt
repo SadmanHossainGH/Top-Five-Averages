@@ -1,0 +1,15 @@
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\bin\Debug\net6.0\Top Five Averages.exe
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\bin\Debug\net6.0\Top Five Averages.deps.json
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\bin\Debug\net6.0\Top Five Averages.runtimeconfig.json
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\bin\Debug\net6.0\Top Five Averages.dll
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\bin\Debug\net6.0\Top Five Averages.pdb
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\obj\Debug\net6.0\Top Five Averages.csproj.AssemblyReference.cache
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\obj\Debug\net6.0\Top Five Averages.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\obj\Debug\net6.0\Top Five Averages.AssemblyInfoInputs.cache
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\obj\Debug\net6.0\Top Five Averages.AssemblyInfo.cs
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\obj\Debug\net6.0\Top Five Averages.csproj.CoreCompileInputs.cache
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\obj\Debug\net6.0\Top Five Averages.dll
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\obj\Debug\net6.0\refint\Top Five Averages.dll
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\obj\Debug\net6.0\Top Five Averages.pdb
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\obj\Debug\net6.0\Top Five Averages.genruntimeconfig.cache
+C:\Users\Sadma\Documents\Code\C#\Top Five Averages\obj\Debug\net6.0\ref\Top Five Averages.dll

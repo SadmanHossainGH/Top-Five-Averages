@@ -24,12 +24,19 @@ namespace name
 
         // Returns the average of the top 5 scores for each unique id is a list
         // Parameter: 2-D array of <id,score>
-        // Output: 2-D array <id, average of top 5 scores> 
+        // Output: 2-D array <id, average of top 5 scores>
+
         static int[,] getTopFiveAverages(int[,] items)
-        {            
+        {   
+            // not needed as problem assumes at least 5 entries, but better to be safe
+            if(items.GetLength(0) < 5){
+                Console.Write("At least 5 scores not provided, Exiting");
+                Environment.Exit(0);
+            } 
+
             int[,] result;
 
-            // create sorted dict of <id, priority queue> to keep
+            // create sorted dict of <id, priority queue> to keep 
             // track of previous ids
             SortedDictionary<int, PriorityQueue<int,int>> dict = new SortedDictionary<int, PriorityQueue<int,int>>();
 
@@ -61,7 +68,14 @@ namespace name
              // for each item in dict calculate average
              // and store <id, average> in result
              foreach (var pair in dict){
+
                 int currSum = 0;
+
+                if(pair.Value.Count != 5){
+                  Console.Write("5 scores not available for id {0}, Exiting...", pair.Key);
+                  Environment.Exit(0);
+                }
+
                 foreach (var i in Enumerable.Range(0, 5)){
                     currSum += (pair.Value).Dequeue();
                 }
@@ -75,18 +89,19 @@ namespace name
         
         public static void Main()
         {
-             /*int [,] items =  {{1,91},{1,92},{2,93},{2,97},{1,60},{2,77},
-                                {1,65},{1,87},{1,100},{2,100},{2,76}}; */
+             int [,] items =  {{1,91},{1,92},{2,93},{2,97},{1,60},{2,77},
+                                {1,65},{1,87},{1,100},{2,100},{2,76}};
 
-            int [,] items =  {{1,100},{7,100},{1,100},{7,100},{1,100},{7,100},{1,100},{7,100},{1,100},{7,100}};
+            /*int [,] items =  {{1,100},{7,100},{1,100},{7,100},{1,100},{7,100},{1,100},{7,100},{1,100},{7,100}};*/
+            /*int [,] items =  {{1,100}};*/
 
-
+            // return Top 5 Averages
             int [,] result = getTopFiveAverages(items); 
 
-            // Print Result
-            Console.Write("Result { ");
+            // print Result
+            Console.Write("Result: { ");
             for(int i = 0 ; i < result.GetLength(0); i++){
-              Console.Write("{" + result[i,0] + "," + result[i,1] + "} ");
+              Console.Write("[ {0} , {1} ]", result[i,0], result[i,1]);
             }
             Console.Write("} ");
         }

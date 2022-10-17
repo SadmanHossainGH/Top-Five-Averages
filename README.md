@@ -1,5 +1,5 @@
 # Top-Five-Averages
-# Goal: Given list of [id, score] sublists, return
+            # Goal: Given list of [id, score] sublists, return
             # the average of the top 5 scores for each id in list in increasing order
             # Assuming id and score are ints as dictated in examples
 
